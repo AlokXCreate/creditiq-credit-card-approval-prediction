@@ -73,7 +73,7 @@ export const BatchPredictView: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* Upload Box */}
-      <div className="rounded-2xl bg-slate-900/90 border border-slate-800 p-6 space-y-6 shadow-xl">
+      <div className="rounded-2xl glass-card glass-card-hover p-6 space-y-6 shadow-2xl">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
           <div>
             <h3 className="text-base font-bold text-white flex items-center gap-2">
@@ -158,26 +158,26 @@ export const BatchPredictView: React.FC = () => {
         <div className="space-y-6">
           {/* Summary KPIs */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+            <div className="p-4 rounded-xl glass-card glass-card-hover">
               <span className="text-xs text-slate-400 block font-medium">Total Processed</span>
               <span className="text-2xl font-black text-white">{response.total_processed}</span>
             </div>
-            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+            <div className="p-4 rounded-xl glass-card glass-card-hover">
               <span className="text-xs text-slate-400 block font-medium">Approved</span>
               <span className="text-2xl font-black text-emerald-400">{response.total_approved}</span>
             </div>
-            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+            <div className="p-4 rounded-xl glass-card glass-card-hover">
               <span className="text-xs text-slate-400 block font-medium">Rejected</span>
               <span className="text-2xl font-black text-rose-400">{response.total_rejected}</span>
             </div>
-            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+            <div className="p-4 rounded-xl glass-card glass-card-hover">
               <span className="text-xs text-slate-400 block font-medium">Approval Ratio</span>
               <span className="text-2xl font-black text-indigo-400">{response.approval_rate}%</span>
             </div>
           </div>
 
           {/* Results Table */}
-          <div className="rounded-xl bg-slate-900/90 border border-slate-800 p-5 space-y-4">
+          <div className="rounded-xl glass-card glass-card-hover p-5 space-y-4 shadow-xl">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <h4 className="text-sm font-bold text-white">Batch Evaluation Output</h4>
               <div className="relative">

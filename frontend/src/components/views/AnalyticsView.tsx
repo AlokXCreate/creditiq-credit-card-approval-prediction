@@ -78,7 +78,7 @@ export const AnalyticsView: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* Top Banner with Model Info and Retrain Action */}
-      <div className="relative rounded-2xl bg-gradient-to-r from-slate-900 via-slate-900 to-indigo-950/40 border border-slate-800 p-6 flex flex-col md:flex-row md:items-center justify-between gap-4 overflow-hidden shadow-xl">
+      <div className="relative rounded-2xl glass-card border border-slate-700/60 p-6 flex flex-col md:flex-row md:items-center justify-between gap-4 overflow-hidden shadow-2xl">
         <BorderBeam size={220} duration={8} colorFrom="#6366F1" colorTo="#10B981" />
         <div className="space-y-1">
           <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold">
@@ -113,7 +113,7 @@ export const AnalyticsView: React.FC = () => {
 
       {/* Metric Cards Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+        <div className="p-4 rounded-xl glass-card glass-card-hover">
           <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block">
             Accuracy
           </span>
@@ -123,7 +123,7 @@ export const AnalyticsView: React.FC = () => {
           <span className="text-[10px] text-emerald-400 mt-1 block">Out-of-sample test</span>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+        <div className="p-4 rounded-xl glass-card glass-card-hover">
           <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block">
             ROC-AUC Score
           </span>
@@ -133,7 +133,7 @@ export const AnalyticsView: React.FC = () => {
           <span className="text-[10px] text-purple-400/80 mt-1 block">Discrimination power</span>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+        <div className="p-4 rounded-xl glass-card glass-card-hover">
           <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block">
             F1 Score
           </span>
@@ -143,7 +143,7 @@ export const AnalyticsView: React.FC = () => {
           <span className="text-[10px] text-slate-400 mt-1 block">Harmonic mean</span>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+        <div className="p-4 rounded-xl glass-card glass-card-hover">
           <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block">
             Precision
           </span>
@@ -153,7 +153,7 @@ export const AnalyticsView: React.FC = () => {
           <span className="text-[10px] text-slate-400 mt-1 block">True approval quality</span>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+        <div className="p-4 rounded-xl glass-card glass-card-hover">
           <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block">
             Recall (Sensitivity)
           </span>
@@ -167,7 +167,7 @@ export const AnalyticsView: React.FC = () => {
       {/* Row: Confusion Matrix + ROC Curve */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Confusion Matrix */}
-        <div className="rounded-xl bg-slate-900/90 border border-slate-800 p-5 space-y-4">
+        <div className="rounded-xl glass-card glass-card-hover p-5 space-y-4 shadow-xl">
           <div className="flex items-center justify-between">
             <h3 className="text-sm font-bold text-white flex items-center gap-2">
               <Layers className="size-4 text-emerald-400" />
@@ -232,7 +232,7 @@ export const AnalyticsView: React.FC = () => {
         </div>
 
         {/* ROC Curve Graph */}
-        <div className="rounded-xl bg-slate-900/90 border border-slate-800 p-5 space-y-4">
+        <div className="rounded-xl glass-card glass-card-hover p-5 space-y-4 shadow-xl">
           <div className="flex items-center justify-between">
             <h3 className="text-sm font-bold text-white flex items-center gap-2">
               <LineChart className="size-4 text-purple-400" />
@@ -308,7 +308,7 @@ export const AnalyticsView: React.FC = () => {
       {/* Row: GridSearchCV Results & Coefficients */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* GridSearchCV Optimization Table */}
-        <div className="rounded-xl bg-slate-900/90 border border-slate-800 p-5 space-y-4">
+        <div className="rounded-xl glass-card glass-card-hover p-5 space-y-4 shadow-xl">
           <div className="flex items-center justify-between">
             <h3 className="text-sm font-bold text-white flex items-center gap-2">
               <Sliders className="size-4 text-emerald-400" />
@@ -368,7 +368,7 @@ export const AnalyticsView: React.FC = () => {
         </div>
 
         {/* Feature Importance / Coefficients Bar Chart */}
-        <div className="rounded-xl bg-slate-900/90 border border-slate-800 p-5 space-y-4">
+        <div className="rounded-xl glass-card glass-card-hover p-5 space-y-4 shadow-xl">
           <div className="flex items-center justify-between">
             <h3 className="text-sm font-bold text-white flex items-center gap-2">
               <BarChart3 className="size-4 text-indigo-400" />

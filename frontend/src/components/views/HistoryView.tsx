@@ -58,7 +58,7 @@ export const HistoryView: React.FC = () => {
       await api.deleteHistoryItem(id);
       loadHistory();
       if (selectedItem?.id === id) setSelectedItem(null);
-    } catch (e) {
+    } catch (_err) {
       alert("Failed to delete record.");
     }
   };
@@ -69,7 +69,7 @@ export const HistoryView: React.FC = () => {
       await api.clearHistory();
       loadHistory();
       setSelectedItem(null);
-    } catch (e) {
+    } catch (_err) {
       alert("Failed to clear records.");
     }
   };
@@ -77,7 +77,7 @@ export const HistoryView: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* Search and Filters Bar */}
-      <div className="rounded-2xl bg-slate-900/90 border border-slate-800 p-5 space-y-4 shadow-xl">
+      <div className="rounded-2xl glass-card glass-card-hover p-5 space-y-4 shadow-2xl">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
           <div>
             <h3 className="text-base font-bold text-white flex items-center gap-2">
@@ -150,7 +150,7 @@ export const HistoryView: React.FC = () => {
       </div>
 
       {/* History Table */}
-      <div className="rounded-xl bg-slate-900/90 border border-slate-800 p-5 space-y-4">
+      <div className="rounded-xl glass-card glass-card-hover p-5 space-y-4 shadow-xl">
         {loading ? (
           <div className="py-12 text-center text-xs text-slate-400 flex items-center justify-center gap-2">
             <RefreshCw className="size-4 animate-spin text-emerald-400" />
@@ -261,7 +261,7 @@ export const HistoryView: React.FC = () => {
       {/* Details Modal */}
       {selectedItem && (
         <div className="fixed inset-0 bg-black/75 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6 max-w-lg w-full space-y-5 shadow-2xl relative">
+          <div className="rounded-2xl glass-card border border-slate-700/60 p-6 max-w-lg w-full space-y-5 shadow-2xl relative">
             <div className="flex items-center justify-between border-b border-slate-800 pb-3">
               <div>
                 <span className="text-xs text-slate-400">Application Record #{selectedItem.id}</span>

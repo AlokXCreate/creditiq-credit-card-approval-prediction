@@ -66,7 +66,7 @@ export const DatasetView: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* Top Dataset Metrics */}
-      <div className="rounded-2xl bg-slate-900/90 border border-slate-800 p-6 space-y-4 shadow-xl">
+      <div className="rounded-2xl glass-card glass-card-hover p-6 space-y-4 shadow-2xl">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
           <div>
             <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold mb-1">
@@ -91,19 +91,19 @@ export const DatasetView: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-          <div className="p-4 rounded-xl bg-slate-950 border border-slate-800">
+          <div className="p-4 rounded-xl glass-card glass-card-hover">
             <span className="text-xs text-slate-400 block font-medium">Total Instances</span>
             <span className="text-2xl font-black text-white">{summary.total_records}</span>
           </div>
-          <div className="p-4 rounded-xl bg-slate-950 border border-slate-800">
+          <div className="p-4 rounded-xl glass-card glass-card-hover">
             <span className="text-xs text-slate-400 block font-medium">Historical Approvals</span>
             <span className="text-2xl font-black text-emerald-400">{summary.total_approved}</span>
           </div>
-          <div className="p-4 rounded-xl bg-slate-950 border border-slate-800">
+          <div className="p-4 rounded-xl glass-card glass-card-hover">
             <span className="text-xs text-slate-400 block font-medium">Historical Rejections</span>
             <span className="text-2xl font-black text-rose-400">{summary.total_rejected}</span>
           </div>
-          <div className="p-4 rounded-xl bg-slate-950 border border-slate-800">
+          <div className="p-4 rounded-xl glass-card glass-card-hover">
             <span className="text-xs text-slate-400 block font-medium">Dataset Approval Rate</span>
             <span className="text-2xl font-black text-indigo-400">{summary.approval_rate}%</span>
           </div>
@@ -111,7 +111,7 @@ export const DatasetView: React.FC = () => {
       </div>
 
       {/* Numerical Attributes Statistics */}
-      <div className="rounded-xl bg-slate-900/90 border border-slate-800 p-5 space-y-4">
+      <div className="rounded-xl glass-card glass-card-hover p-5 space-y-4 shadow-xl">
         <h3 className="text-sm font-bold text-white flex items-center gap-2">
           <BarChart2 className="size-4 text-emerald-400" />
           <span>Continuous Feature Distributions (Statistical Moments)</span>
@@ -158,7 +158,7 @@ export const DatasetView: React.FC = () => {
       </div>
 
       {/* Sample Records Table */}
-      <div className="rounded-xl bg-slate-900/90 border border-slate-800 p-5 space-y-4">
+      <div className="rounded-xl glass-card glass-card-hover p-5 space-y-4 shadow-xl">
         <h3 className="text-sm font-bold text-white flex items-center gap-2">
           <Table className="size-4 text-indigo-400" />
           <span>Training Records Explorer (Top 10 Sample Rows)</span>
@@ -215,7 +215,7 @@ export const DatasetView: React.FC = () => {
       </div>
 
       {/* Upload Custom Dataset Section */}
-      <div className="rounded-xl bg-slate-900/90 border border-slate-800 p-5 space-y-4">
+      <div className="rounded-xl glass-card glass-card-hover p-5 space-y-4 shadow-xl">
         <h3 className="text-sm font-bold text-white flex items-center gap-2">
           <Upload className="size-4 text-emerald-400" />
           <span>Upload Custom Dataset to Retrain Model</span>

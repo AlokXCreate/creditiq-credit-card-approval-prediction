@@ -56,7 +56,7 @@ export const DeploymentView: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* Top Banner */}
-      <div className="rounded-2xl bg-slate-900/90 border border-slate-800 p-6 space-y-4 shadow-xl">
+      <div className="rounded-2xl glass-card glass-card-hover p-6 space-y-4 shadow-2xl">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
           <div>
             <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold mb-1">
@@ -83,7 +83,7 @@ export const DeploymentView: React.FC = () => {
         {/* Live Diagnostics Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {/* Frontend */}
-          <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
+          <div className="p-4 rounded-xl glass-card glass-card-hover space-y-2">
             <div className="flex items-center justify-between">
               <span className="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
                 <Globe className="size-4 text-indigo-400" />
@@ -100,7 +100,7 @@ export const DeploymentView: React.FC = () => {
           </div>
 
           {/* Backend API */}
-          <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
+          <div className="p-4 rounded-xl glass-card glass-card-hover space-y-2">
             <div className="flex items-center justify-between">
               <span className="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
                 <Server className="size-4 text-emerald-400" />
@@ -123,7 +123,7 @@ export const DeploymentView: React.FC = () => {
           </div>
 
           {/* Persistence */}
-          <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
+          <div className="p-4 rounded-xl glass-card glass-card-hover space-y-2">
             <div className="flex items-center justify-between">
               <span className="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
                 <Database className="size-4 text-amber-400" />
@@ -142,7 +142,7 @@ export const DeploymentView: React.FC = () => {
       </div>
 
       {/* Deployment Guides & Production Commands */}
-      <div className="rounded-xl bg-slate-900/90 border border-slate-800 p-5 space-y-4">
+      <div className="rounded-xl glass-card glass-card-hover p-5 space-y-4 shadow-xl">
         <h3 className="text-sm font-bold text-white flex items-center gap-2">
           <Terminal className="size-4 text-indigo-400" />
           <span>Production Build & Deployment Configuration</span>
