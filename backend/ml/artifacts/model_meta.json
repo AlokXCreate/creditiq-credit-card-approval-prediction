@@ -1,0 +1,479 @@
+{
+  "model_name": "CreditIQ Logistic Regression Classifier",
+  "algorithm": "Logistic Regression with L1/L2 Regularization (ElasticNet/Liblinear)",
+  "hyperparameter_tuning": "5-Fold Stratified GridSearchCV",
+  "trained_at": "2026-11-01 12:36:12 UTC",
+  "total_samples": 690,
+  "train_samples": 552,
+  "test_samples": 138,
+  "best_hyperparameters": {
+    "C": 1.0,
+    "penalty": "l1",
+    "solver": "liblinear"
+  },
+  "best_cv_roc_auc": 0.9177,
+  "metrics": {
+    "accuracy": 0.8623,
+    "precision": 0.8281,
+    "recall": 0.8689,
+    "f1_score": 0.848,
+    "roc_auc": 0.9636
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        66,
+        11
+      ],
+      [
+        8,
+        53
+      ]
+    ],
+    "true_negatives": 66,
+    "false_positives": 11,
+    "false_negatives": 8,
+    "true_positives": 53
+  },
+  "intercept": 0.0,
+  "roc_curve": [
+    {
+      "fpr": 0.0,
+      "tpr": 0.0
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.0164
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.2459
+    },
+    {
+      "fpr": 0.013,
+      "tpr": 0.2459
+    },
+    {
+      "fpr": 0.013,
+      "tpr": 0.6557
+    },
+    {
+      "fpr": 0.026,
+      "tpr": 0.6557
+    },
+    {
+      "fpr": 0.026,
+      "tpr": 0.6885
+    },
+    {
+      "fpr": 0.039,
+      "tpr": 0.6885
+    },
+    {
+      "fpr": 0.039,
+      "tpr": 0.8033
+    },
+    {
+      "fpr": 0.0649,
+      "tpr": 0.8033
+    },
+    {
+      "fpr": 0.0649,
+      "tpr": 0.8197
+    },
+    {
+      "fpr": 0.0779,
+      "tpr": 0.8197
+    },
+    {
+      "fpr": 0.0779,
+      "tpr": 0.8361
+    },
+    {
+      "fpr": 0.1169,
+      "tpr": 0.8361
+    },
+    {
+      "fpr": 0.1169,
+      "tpr": 0.8525
+    },
+    {
+      "fpr": 0.1429,
+      "tpr": 0.8525
+    },
+    {
+      "fpr": 0.1429,
+      "tpr": 0.9836
+    },
+    {
+      "fpr": 0.1688,
+      "tpr": 0.9836
+    },
+    {
+      "fpr": 0.1688,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0
+    }
+  ],
+  "pr_curve": [
+    {
+      "recall": 1.0,
+      "precision": 0.442
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.4586
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.4766
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.4959
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.5169
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.5398
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.5648
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.5922
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.6224
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.6559
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.6932
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.7349
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.7821
+    },
+    {
+      "recall": 0.9836,
+      "precision": 0.8219
+    },
+    {
+      "recall": 0.9344,
+      "precision": 0.8382
+    },
+    {
+      "recall": 0.8525,
+      "precision": 0.8254
+    },
+    {
+      "recall": 0.8361,
+      "precision": 0.8793
+    },
+    {
+      "recall": 0.8033,
+      "precision": 0.9245
+    },
+    {
+      "recall": 0.7377,
+      "precision": 0.9375
+    },
+    {
+      "recall": 0.6721,
+      "precision": 0.9535
+    },
+    {
+      "recall": 0.6066,
+      "precision": 0.9737
+    },
+    {
+      "recall": 0.5246,
+      "precision": 0.9697
+    },
+    {
+      "recall": 0.4426,
+      "precision": 0.9643
+    },
+    {
+      "recall": 0.3607,
+      "precision": 0.9565
+    },
+    {
+      "recall": 0.2787,
+      "precision": 0.9444
+    },
+    {
+      "recall": 0.2131,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.1311,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.0492,
+      "precision": 1.0
+    }
+  ],
+  "top_features": [
+    {
+      "feature": "Income",
+      "coefficient": 1.7702,
+      "odds_ratio": 5.8721,
+      "abs_coef": 1.7702,
+      "impact": "Positive"
+    },
+    {
+      "feature": "EducationLevel_ff",
+      "coefficient": -1.7563,
+      "odds_ratio": 0.1727,
+      "abs_coef": 1.7563,
+      "impact": "Negative"
+    },
+    {
+      "feature": "PriorDefault_Yes",
+      "coefficient": 1.7002,
+      "odds_ratio": 5.475,
+      "abs_coef": 1.7002,
+      "impact": "Positive"
+    },
+    {
+      "feature": "Citizen_ByOtherMeans",
+      "coefficient": 1.5216,
+      "odds_ratio": 4.5795,
+      "abs_coef": 1.5216,
+      "impact": "Positive"
+    },
+    {
+      "feature": "EducationLevel_x",
+      "coefficient": 1.451,
+      "odds_ratio": 4.2674,
+      "abs_coef": 1.451,
+      "impact": "Positive"
+    },
+    {
+      "feature": "PriorDefault_No",
+      "coefficient": -1.2148,
+      "odds_ratio": 0.2968,
+      "abs_coef": 1.2148,
+      "impact": "Negative"
+    },
+    {
+      "feature": "EducationLevel_cc",
+      "coefficient": 0.798,
+      "odds_ratio": 2.2212,
+      "abs_coef": 0.798,
+      "impact": "Positive"
+    },
+    {
+      "feature": "EducationLevel_i",
+      "coefficient": -0.6209,
+      "odds_ratio": 0.5375,
+      "abs_coef": 0.6209,
+      "impact": "Negative"
+    },
+    {
+      "feature": "Employed_No",
+      "coefficient": -0.5636,
+      "odds_ratio": 0.5691,
+      "abs_coef": 0.5636,
+      "impact": "Negative"
+    },
+    {
+      "feature": "CreditScore",
+      "coefficient": 0.5598,
+      "odds_ratio": 1.7503,
+      "abs_coef": 0.5598,
+      "impact": "Positive"
+    },
+    {
+      "feature": "Married_Single",
+      "coefficient": -0.5085,
+      "odds_ratio": 0.6014,
+      "abs_coef": 0.5085,
+      "impact": "Negative"
+    },
+    {
+      "feature": "EducationLevel_aa",
+      "coefficient": -0.3682,
+      "odds_ratio": 0.692,
+      "abs_coef": 0.3682,
+      "impact": "Negative"
+    },
+    {
+      "feature": "EducationLevel_k",
+      "coefficient": -0.2984,
+      "odds_ratio": 0.742,
+      "abs_coef": 0.2984,
+      "impact": "Negative"
+    },
+    {
+      "feature": "ZipCode",
+      "coefficient": -0.2694,
+      "odds_ratio": 0.7639,
+      "abs_coef": 0.2694,
+      "impact": "Negative"
+    },
+    {
+      "feature": "YearsEmployed",
+      "coefficient": 0.263,
+      "odds_ratio": 1.3008,
+      "abs_coef": 0.263,
+      "impact": "Positive"
+    },
+    {
+      "feature": "Citizen_ByBirth",
+      "coefficient": -0.1981,
+      "odds_ratio": 0.8203,
+      "abs_coef": 0.1981,
+      "impact": "Negative"
+    },
+    {
+      "feature": "BankCustomer_No",
+      "coefficient": -0.1701,
+      "odds_ratio": 0.8436,
+      "abs_coef": 0.1701,
+      "impact": "Negative"
+    },
+    {
+      "feature": "DriversLicense_No",
+      "coefficient": 0.1608,
+      "odds_ratio": 1.1745,
+      "abs_coef": 0.1608,
+      "impact": "Positive"
+    },
+    {
+      "feature": "Employed_Yes",
+      "coefficient": 0.1569,
+      "odds_ratio": 1.1699,
+      "abs_coef": 0.1569,
+      "impact": "Positive"
+    },
+    {
+      "feature": "EducationLevel_c",
+      "coefficient": 0.0971,
+      "odds_ratio": 1.102,
+      "abs_coef": 0.0971,
+      "impact": "Positive"
+    }
+  ],
+  "grid_search_summary": [
+    {
+      "params": {
+        "C": 1.0,
+        "penalty": "l1",
+        "solver": "liblinear"
+      },
+      "mean_test_roc_auc": 0.9177,
+      "std_test_roc_auc": 0.02,
+      "rank": 1
+    },
+    {
+      "params": {
+        "C": 0.5,
+        "penalty": "l1",
+        "solver": "liblinear"
+      },
+      "mean_test_roc_auc": 0.9171,
+      "std_test_roc_auc": 0.0197,
+      "rank": 2
+    },
+    {
+      "params": {
+        "C": 0.5,
+        "penalty": "l2",
+        "solver": "liblinear"
+      },
+      "mean_test_roc_auc": 0.9167,
+      "std_test_roc_auc": 0.0187,
+      "rank": 3
+    },
+    {
+      "params": {
+        "C": 0.5,
+        "penalty": "l2",
+        "solver": "lbfgs"
+      },
+      "mean_test_roc_auc": 0.9166,
+      "std_test_roc_auc": 0.0186,
+      "rank": 4
+    },
+    {
+      "params": {
+        "C": 1.0,
+        "penalty": "l2",
+        "solver": "lbfgs"
+      },
+      "mean_test_roc_auc": 0.9165,
+      "std_test_roc_auc": 0.0188,
+      "rank": 5
+    },
+    {
+      "params": {
+        "C": 1.0,
+        "penalty": "l2",
+        "solver": "liblinear"
+      },
+      "mean_test_roc_auc": 0.9164,
+      "std_test_roc_auc": 0.0188,
+      "rank": 6
+    },
+    {
+      "params": {
+        "C": 5.0,
+        "penalty": "l2",
+        "solver": "liblinear"
+      },
+      "mean_test_roc_auc": 0.9144,
+      "std_test_roc_auc": 0.0199,
+      "rank": 7
+    },
+    {
+      "params": {
+        "C": 0.1,
+        "penalty": "l2",
+        "solver": "liblinear"
+      },
+      "mean_test_roc_auc": 0.9141,
+      "std_test_roc_auc": 0.0231,
+      "rank": 8
+    },
+    {
+      "params": {
+        "C": 5.0,
+        "penalty": "l2",
+        "solver": "lbfgs"
+      },
+      "mean_test_roc_auc": 0.9139,
+      "std_test_roc_auc": 0.0195,
+      "rank": 9
+    },
+    {
+      "params": {
+        "C": 5.0,
+        "penalty": "l1",
+        "solver": "liblinear"
+      },
+      "mean_test_roc_auc": 0.9138,
+      "std_test_roc_auc": 0.0202,
+      "rank": 10
+    }
+  ]
+}
