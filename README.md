@@ -56,7 +56,10 @@
 
 ## 📸 Application Showcase
 
-### 1. Executive Underwriting Dashboard & Holographic Credit Matrix
+### 1. Dynamic 5-Second Opening Intro Experience
+![Dynamic Opening Intro](screenshots/intro_transition.png)
+
+### 2. Executive Underwriting Dashboard & Holographic Credit Matrix
 ![Executive Dashboard](screenshots/dashboard.png)
 
 ### 2. Real-Time Application Evaluation & Factor Explanation Breakdown
