@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: creditiq-api
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: DATABASE_URL
+        value: sqlite:///./creditiq.db
+    healthCheckPath: /api/health
+    autoDeploy: true
