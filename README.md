@@ -54,6 +54,31 @@
 
 ---
 
+## 📸 Application Showcase
+
+### 1. Executive Underwriting Dashboard & Holographic Credit Matrix
+![Executive Dashboard](screenshots/dashboard.png)
+
+### 2. Real-Time Application Evaluation & Factor Explanation Breakdown
+![Credit Evaluation Result](screenshots/prediction_result.png)
+
+### 3. High-Throughput Batch Scoring Engine
+![Batch Scoring](screenshots/batch_scoring.png)
+
+### 4. Model Analytics, ROC Curve & Confusion Matrix
+![Model Diagnostics](screenshots/model_diagnostics.png)
+
+### 5. Benchmark Dataset Explorer & Statistical Moments
+![Dataset Explorer](screenshots/dataset_explorer.png)
+
+### 6. Full Audit Log & Regulatory Compliance History
+![Audit History](screenshots/audit_history.png)
+
+### 7. Production Architecture & Cloud Deployment Console
+![Live Deployment](screenshots/live_deployment.png)
+
+---
+
 ## 🛠️ MCP Tooling Integration
 
 CREDITIQ integrates Antigravity IDE Model Context Protocol (MCP) servers:
